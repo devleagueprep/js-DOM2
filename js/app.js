@@ -68,6 +68,30 @@ I'd leave a blank space for this oxtail soup!
 
 Append this element to the div id of "comment4"*/
 
+var kamPrice = document.createElement("div");
+kamPrice.id = "price4";
+kamPrice.innerHTML = "Price: $$$";
+
+text4.appendChild(kamPrice);
+
+var kamAddy = document.createElement("div");
+kamAddy.id = "addy4";
+kamAddy.innerHTML = "1620 N. School St, Honolulu, HI 96817";
+
+text4.appendChild(kamAddy);
+
+var kamHours = document.createElement("div");
+kamHours.id = "hours4";
+kamHours.innerHTML = "9am - 10pm Sun - Sat";
+
+text4.appendChild(kamHours);
+
+var kamUpdate = document.createElement("p");
+kamUpdate.id = "update4";
+kamUpdate.innerHTML = "I'd leave a blank space for this oxtail soup!";
+
+comment4.appendChild(kamUpdate);
+
 
 //5. The Death Star Cafe
 /*The empire strikes back with a new and improved oxtail soup offering. Help the dark side win back customers by executing the following commands:*/
