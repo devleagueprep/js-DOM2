@@ -7,14 +7,24 @@ Also don't forget to run your live-server for this assignment.*/
 
 Rating: 5 Stars*/
 
+var rate = "Rating: 5 Stars";
+var newRate = document.getElementById ('rating1');
+newRate.id = 'five';
+newRate.innerHTML = rate;
 
 //2. Sunrise Restaurant
 /*No rise and shine for the Sunrise Restaurant, as their price and address needs some serious updating. Bring in some sunshine by changing the price and address to the following:
 
 Price: $$$
 Adress: 525 Kapahulu Ave, Honolulu, HI 96815*/
+var newPrice = "Price: $$$";
+var newAdd = 'Address: 525 Kapahulu Ave, Honolulu HI 96815';
 
+var addprice = document.getElementById ('price2');
+addprice.innerHTML = newPrice;
 
+var addy = document.getElementById ('addy2');
+addy.innerHTML = newAdd;
 //3. Ramen Nakamura
 /*Literally, where did the time go? Ramen Nakamura is missing the hours section! This mistake is timeless.
 
@@ -23,6 +33,12 @@ You will need to create a new div element with an id of "hours3". Inside this di
 Hours: 6pm - 12am Sun - Sat
 
 Append this div element to the div id "text3"*/
+
+var ramhours = "Hours: 6pm - 12am Sun - Sat";
+var newramhours = document.createElement ('div');
+newramhours.id = 'hours3';
+newramhours.innerHTML = ramhours;
+addy3.appendChild (newramhours);
 
 
 //4. Kam Bowl
@@ -35,12 +51,24 @@ Price: $$$
 Append this element to the div with the id of 
 "text4"*/
 
+var kamPrice = "Price: $$$";
+var addKamPrice = document.createElement('div');
+addKamPrice.id = 'price4';
+addKamPrice.innerHTML = kamPrice;
+text4.appendChild (addKamPrice);
+
 /*Create a new div element with an id of "addy4". Inside this div element, give it the following info:
 
 Address: 1620 N. School St, Honolulu, HI 96817
 
 Append this element to the div with the id of 
 "text4"*/
+
+var kamAddy = "Address: 1620 N. School St, Honolulu, HI 96817";
+var addKamAddy = document.createElement ("addy4");
+addKamAddy.id = "addy4";
+addKamAddy.innerHTML = kamAddy;
+text4.appendChild (addKamAddy);
 
 /*Create a new div element with an id of "hours4". Inside this div element, give it the following info:
 
@@ -50,15 +78,32 @@ Append this element to the div with the id of
 "text4"
 */
 
+var kamHours = "Hours: 9am - 10 pm Sun - Sat";
+var addKamHours = document.createElement ('div');
+addKamHours.id = 'hours4';
+addKamHours.innerHTML = kamHours;
+text4.appendChild (addKamHours);
+
 /*Create a paragraph element with an id of "update4". Inside this paragraph element, give it the following info:
 
 I'd leave a blank space for this oxtail soup!
 
 Append this element to the div id of "comment4"*/
 
+var comment = "I'd leave a blank space for this mutha fuckin soup";
+var createComment = document.createElement ('p');
+createComment.id = 'update4';
+createComment.innerHTML = comment;
+comment4.appendChild (createComment);
 
 //5. The Death Star Cafe
 /*The empire strikes back with a new and improved oxtail soup offering. Help the dark side win back customers by executing the following commands:*/
+var deathName = "The Death Star Cafe";
+var deathRating = "Rating: 2 Stars";
+var deathPrice = "Price: $$";
+var deathAddy = "Address: A glaxy far, far away.";
+var deatHours = "Hours: We never close.";
+
 
 /*Create the div elements with the following id's:
 
@@ -79,3 +124,27 @@ hours5: Hours: We never close.
 Append the div elements to the div id "text5"
 */
 
+var addDeathName = document.createElement ('div');
+addDeathName.id = 'name5';
+addDeathName.innerHTML = deathName;
+text5.appendChild (addDeathName);
+
+var addDeathRating = document.createElement ('div');
+addDeathRating.id = 'rating5';
+addDeathRating.innerHTML = deathRating;
+text5.appendChild (addDeathRating);
+
+var addDeathPrice = document.createElement('div');
+addDeathPrice.id = 'price5';
+addDeathPrice.innerHTML = deathPrice;
+text5.appendChild (addDeathPrice);
+
+var addDeathHours = document.createElement ('div');
+addDeathHours.id = 'hours5';
+addDeathHours.innerHTML = deatHours;
+text5.appendChild (addDeathHours);
+
+var addDeathAddy = document.createElement ('div');
+addDeathAddy.id = 'addy5';
+addDeathAddy.innerHTML = deathAddy;
+text5.appendChild (addDeathAddy);
