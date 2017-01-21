@@ -115,3 +115,29 @@ hours5: Hours: We never close.
 Append the div elements to the div id "text5"
 */
 
+var dsName = document.createElement("div");
+var dsRating = document.createElement("div");
+var dsPrice = document.createElement("div");
+var dsAddy = document.createElement("div");
+var dsHours = document.createElement("div");
+
+dsName.id = "name5";
+dsName.innerHTML = "5. The Death Star Cafe";
+
+dsRating.id = "rating5";
+dsRating.innerHTML = "Rating: 2 Stars";
+
+dsPrice.id = "price5";
+dsPrice.innerHTML = "$$";
+
+dsAddy.id = "addy5";
+dsAddy.innerHTML = "Address: A galaxy far, far away.";
+
+dsHours.id = "hours5";
+dsHours.innerHTML = "Hours: We never close.";
+
+text5.appendChild(dsName);
+text5.appendChild(dsRating);
+text5.appendChild(dsPrice);
+text5.appendChild(dsAddy);
+text5.appendChild(dsHours);
