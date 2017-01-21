@@ -16,6 +16,10 @@ document.getElementById("rating1").innerHTML = "Rating: 5 Stars";
 Price: $$$
 Adress: 525 Kapahulu Ave, Honolulu, HI 96815*/
 
+document.getElementById("price2").innerHTML = "$$$";
+
+document.getElementById("addy2").innerHTML = "525 Kapahulu Ave, Honolulu, HI 96815";
+
 
 //3. Ramen Nakamura
 /*Literally, where did the time go? Ramen Nakamura is missing the hours section! This mistake is timeless.
@@ -25,6 +29,12 @@ You will need to create a new div element with an id of "hours3". Inside this di
 Hours: 6pm - 12am Sun - Sat
 
 Append this div element to the div id "text3"*/
+
+var ramenHours = document.createElement("div");
+ramenHours.id = "hours3";
+ramenHours.innerHTML = "Hours: 6pm - 12am Sun - Sat";
+
+text3.appendChild(ramenHours);
 
 
 //4. Kam Bowl
