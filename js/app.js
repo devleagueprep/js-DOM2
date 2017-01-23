@@ -46,12 +46,22 @@ Price: $$$
 Append this element to the div with the id of 
 "text4"*/
 
+var kingpin = document.createElement("div");
+kingpin.id = "price4";
+kingpin.innerHTML = "Price: $$$";
+text4.appendChild(kingpin);
+
 /*Create a new div element with an id of "addy4". Inside this div element, give it the following info:
 
 Address: 1620 N. School St, Honolulu, HI 96817
 
 Append this element to the div with the id of 
 "text4"*/
+
+var addressOne = document.createElement("div");
+addressOne.id = "addy4";
+addressOne.innerHTML = "Address: 1620 N. School St, Honolulu, HI 96817";
+text4.appendChild(addressOne);
 
 /*Create a new div element with an id of "hours4". Inside this div element, give it the following info:
 
@@ -60,6 +70,10 @@ Hours: 9am - 10pm Sun - Sat
 Append this element to the div with the id of 
 "text4"
 */
+var openTime = document.createElement("div");
+openTime.id = "hours4";
+openTime.innerHTML = "Hours: 9am - 10pm Sun - Sat";
+text4.appendChild(openTime);
 
 /*Create a paragraph element with an id of "update4". Inside this paragraph element, give it the following info:
 
