@@ -19,7 +19,7 @@ Adress: 525 Kapahulu Ave, Honolulu, HI 96815*/
 
 var priceTwo = document.getElementById("price2");
 var locationTwo = document.getElementById("addy2");
-priceTwo.innerHTML = "$$$";
+priceTwo.innerHTML = "Price: $$$";
 addy2.innerHTML = "525 Kapahulu Ave, Honolulu, HI 96815";
 
 //3. Ramen Nakamura
@@ -81,6 +81,11 @@ I'd leave a blank space for this oxtail soup!
 
 Append this element to the div id of "comment4"*/
 
+var comment = document.createElement("p");
+comment.id = "update4";
+comment.innerHTML = "I'd leave a blank space for this oxtail soup!";
+comment4.appendChild(comment);
+
 
 //5. The Death Star Cafe
 /*The empire strikes back with a new and improved oxtail soup offering. Help the dark side win back customers by executing the following commands:*/
@@ -103,4 +108,44 @@ hours5: Hours: We never close.
 
 Append the div elements to the div id "text5"
 */
+// var sithSoup = document.createElement("div");
+// sithSoup.id = "name5";
+// sithSoup.name = "5. The Death Star Cafe";
+// text5.appendChild(sithSoup);
 
+// var dsName = document.createElement("div");
+// dsName.className = "name5";
+// dsName.innerHTML = "5. The Death Star Cafe";
+// text5.appendChild(dsName);
+
+
+// var dsRating = document.createElement("div");
+// dsRating.className = "rating5";
+// dsRating.innerHTML = "Rating: 2 Stars";
+// text5.appendChild(dsRating);
+
+
+var dsname = document.createElement("div");
+var dsrating = document.createElement("div");
+var dsprice = document.createElement("div");
+var dsaddy = document.createElement("div");
+var dshours = document.createElement("div");
+
+
+dsname.id = "name5";
+dsrating.id = "rating5";
+dsprice.id = "price5";
+dsaddy.id = "addy5";
+dshours.id = "hours5";
+
+dsname.innerHTML = "5. The Death Star";
+dsrating.innerHTML = "Rating: 2 Star";
+dsprice.innerHTML = "Price: $$";
+dsaddy.innerHTML = "Address: A galaxy far, far away.";
+dshours.innerHTML = "Hours: We never close.";
+
+text5.appendChild(dsname);
+text5.appendChild(dsrating);
+text5.appendChild(dsprice);
+text5.appendChild(dsaddy);
+text5.appendChild(dshours);
