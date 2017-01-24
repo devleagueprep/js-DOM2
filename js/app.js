@@ -33,12 +33,15 @@ Hours: 6pm - 12am Sun - Sat
 Append this div element to the div id "text3"*/
 
 
-var newHours = createElement("div");
+var newHours = document.createElement("div");
 newHours.id= "hours3";
 
-var ramenNewHours = getElementById("hours3");
-ramenNewHours.innerHTML = "Hours: 6pm - 12am Sun - Sat";
+//var ramenNewHours = getElementById("hours3");
+//ramenNewHours.innerHTML = "Hours: 6pm - 12am Sun - Sat";
 
+// Initially I had: newHours.innerHTML = " etc...";
+
+newHours.innerHTML  = "Hours: 6pm - 12am Sun - Sat";
 
 text3.appendChild (newHours);
 
@@ -89,9 +92,11 @@ var newHours = document.createElement ("div");
 newHours.id = "hours4";
 newHours.innerHTML = "Hours: 9am - 10pm Sun - Sat";
 
-var updateInfo = doucment.createElement ("p");
+var updateInfo = document.createElement ("p");
 updateInfo.id = "update4";
 updateInfo.innerHTIML = "I'd leave a blank space for this oxtail soup!";
+
+
 
 text4.appendChild(newPrice);
 text4.appendChild(newAddy);
@@ -123,11 +128,11 @@ Append the div elements to the div id "text5"
 */
 
 
-var deathStarName = document.createElemnt("dive");
-var deathStarRating = document.createElemnt("dive");
-var deathStarPrice = document.createElemnt("dive");
-var deathStarAddy = document.createElemnt("dive");
-var deathStarHours = document.createElemnt("dive");
+var deathStarName = document.createElement("div");
+var deathStarRating = document.createElement("div");
+var deathStarPrice = document.createElement("div");
+var deathStarAddy = document.createElement("div");
+var deathStarHours = document.createElement("div");
 
 deathStarName.id = "name5";
 deathStarRating.id = "rating5";
@@ -141,8 +146,8 @@ deathStarPrice.innerHTML = "Price: $$";
 deathStarAddy.innerHTML = "Address: A galaxy far, far away.";
 deathStarHours.innerHTML = "Hours: We never close.";
 
-update5.appendChild(deathStarName);
-update5.appendChild(deathStarRating);
-update5.appendChild(deathStarPrice);
-update5.appendChild(deathStarAddy);
-update5.appendChild(deathStarHours);
+text5.appendChild(deathStarName);
+text5.appendChild(deathStarRating);
+text5.appendChild(deathStarPrice);
+text5.appendChild(deathStarAddy);
+text5.appendChild(deathStarHours);
